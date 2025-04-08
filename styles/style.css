@@ -161,7 +161,7 @@
   line-height: 21px;
 }
 
-.post-like-buttons {
+.card__like-buttons {
   display: grid;
   justify-content: end;
   gap: 12px;
@@ -170,14 +170,14 @@
   grid-auto-flow: column;
 }
 
-.post-like-button {
+.card__like-button {
   inline-size: 130px;
   block-size: 38px;
   text-align: center;
   border: 2px solid var(--border-color);
 }
 
-.post-like-button:focus-visible {
+.card__like-button:focus-visible {
   border: none;
   outline: 2px solid var(--border-color);
   box-shadow: 2px 2px 0px 0px var(--border-color);
@@ -239,7 +239,7 @@
   outline: none;
 }
 
-.post-icon-button:focus-visible {
+.card__icon-button:focus-visible {
   outline: 2px solid #000;
 }
 
@@ -287,7 +287,7 @@
   border: 2px solid var(--main-color);
 } */
 
-.button-style {
+.button {
   --font-family: 'PressStart2P-Regular';
   --font-size: 14px;
 
@@ -298,10 +298,13 @@
   font-size: var(--font-size);
   line-height: 90%;
 
-  color: var(--button-color);
-  background-color: transparent;
+  /* color: var(--button-color);
+  background-color: var(--main-bg); */
+  color: #fff;
+  background-color: #fff;
 
   border: 2px solid var(--border-color);
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -318,7 +321,7 @@
   text-transform: uppercase;
 }
 
-.button-style svg {
+.button svg {
   position: relative;
   block-size: 1.5rem;
   mix-blend-mode: difference;
@@ -326,18 +329,18 @@
   /* color: var(--button-color); */
 }
 
-.button-style:after {
-  content: "";
+.button:before {
+  content: '';
   position: absolute;
   inset: 0;
-  background-color: var(--main-color);
-  transform-origin: left;
-  transform: scaleX(0);
-  transition: transform 0.5s ease-in-out;
+  /* background-color: var(--main-color); */
+  background-color: #000;
+  translate: -100%;
+  transition: translate 0.5s ease-in-out;
 }
 
-.button-style:hover:after {
-  transform: scaleX(1);
+.button:hover:before {
+  translate: 0;
 }
 
 .button__text {
