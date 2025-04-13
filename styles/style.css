@@ -190,6 +190,10 @@
   border-block-end: var(--border-size) solid var(--border-color);
 }
 
+.start {
+  filter: brightness(0.9);
+}
+
 .clean-list {
   filter: grayscale(0.7);
 }
@@ -203,11 +207,11 @@
 }
 
 .care {
-  filter: contrast(1.3) sepia(1) saturate(0.5);
+  filter: sepia(1);
 }
 
 .support {
-  filter: invert(1);
+  filter: invert(1) sepia(0.6);
 }
 
 @keyframes dayNightCycle {
