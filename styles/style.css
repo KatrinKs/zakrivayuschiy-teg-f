@@ -199,7 +199,7 @@
 }
 
 .desigions {
-  filter: hue-rotate(-12deg) blur(0.7px);
+  filter: blur(0.7px);
 }
 
 .care {
@@ -207,7 +207,7 @@
 }
 
 .support {
-  filter: sepia(0.9) invert(1);
+  filter: invert(1);
 }
 
 @keyframes dayNightCycle {
