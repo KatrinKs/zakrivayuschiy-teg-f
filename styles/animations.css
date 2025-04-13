@@ -11,28 +11,28 @@
 */
 
 .like-icon {
-    block-size: 1.5rem;
-    transition: block-size 0.3s linear;
+  block-size: 2.25rem;
+  transition: block-size 0.3s linear;
 } 
 
 .like-icon.is-liked {
-    animation: change-size 0.3s forwards;
+    animation: change-size 0.3s;
 }
 
 @keyframes change-size {
     0% {
-      block-size: 1.5rem;
+      transform: scale(1);
     }
     60% {
-        block-size: 1.8rem;
+      transform: scale(1.25);
     }
     100% {
-        block-size: 1.5rem;
+      transform: scale(1);
     }
 }
   
   .like-icon .contour {
-    fill: var(--countor-color);
+    fill: var(--contour-color);
     transition: fill 0.1s linear;
   }
   
@@ -47,7 +47,7 @@
   }
   
   .like-icon:hover .main-body {
-    fill: var(--countor-color);
+    fill: var(--contour-color);
     transition: fill 0.3s 0.05s linear;
   }
   
@@ -67,7 +67,7 @@
   }
   
   .like-icon:hover .core {
-    fill: var(--countor-color);
+    fill: var(--contour-color);
     transition: fill 0.3s linear;
   }
 
