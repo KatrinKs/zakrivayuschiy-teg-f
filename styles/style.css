@@ -20,7 +20,7 @@
   font-size: var(--font-size, 14px);
 }
 
-.page_section {
+.page__section {
   display: grid;
   justify-self: center;
   inline-size: clamp(23.438rem, 16.285rem + 30.52vw, 43.75rem);
@@ -55,7 +55,7 @@
   border: var(--border-size) solid var(--border-color);
 }
 
-.header-title {
+.header__title {
   --font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 
   justify-self: center;
@@ -69,7 +69,7 @@
   text-transform: uppercase;
 }
 
-.header-text {
+.header__text {
   --font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 
   justify-self: center;
@@ -87,17 +87,17 @@
   gap: 52px;
 }
 
-.post:last-child {
+.card:last-child {
   margin-block-end: 52px;
 }
 
-.post-card {
+.card {
   position: relative;
   display: grid;
   border: var(--border-size) solid var(--border-color);
 }
 
-.post-title {
+.card__title {
   --font-weight: 700;
 
   font-variation-settings: "wght" var(--font-weight, 700);
@@ -106,7 +106,7 @@
   padding: 6px 10px;
 }
 
-.watermark {
+.card__watermark {
   position: absolute;
   inset-block-start: 55px;
   inset-inline-end: 11px;
@@ -134,13 +134,13 @@
   object-position: center;
 }
 
-.post-content {
+.card__content {
   display: grid;
   padding: 25px;
   gap: 25px;
 }
 
-.post-text {
+.card__content-text {
   font-family: "Inter-Variable";
   font-size: 18px;
   font-weight: 400;
@@ -185,7 +185,7 @@
 
 /* IMGS STYLE */
 
-.post-img {
+.card__img {
   border-block-start: var(--border-size) solid var(--border-color);
   border-block-end: var(--border-size) solid var(--border-color);
 }
@@ -223,12 +223,8 @@
   }
 }
 
-.depression {
-  animation: dayNightCycle 10s infinite;
-}
-
 .fly {
-  filter: brightness(0.7) hue-rotate(180deg);
+  animation: dayNightCycle 10s infinite;
 }
 
 .here {
@@ -339,7 +335,7 @@ dialog[open] {
 }
 
 @media (width <= 375px) {
-  .post-title {
+  .card__title {
     line-height: 113%;
   }
 
