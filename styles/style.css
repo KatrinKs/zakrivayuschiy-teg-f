@@ -231,7 +231,7 @@
 }
 
 .here {
-  filter: hue-rotate(38deg) brightness(0.1) contrast(2.7) opacity(0.8);
+  filter: contrast(0.7) opacity(0.8);
 }
 
 /* DIALOG */
