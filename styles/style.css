@@ -191,11 +191,11 @@
 }
 
 .start {
-  filter: brightness(0.9);
+  filter: brightness(0.9) hue-rotate(147deg) saturate(1.2);
 }
 
 .clean-list {
-  filter: grayscale(0.7);
+  filter: grayscale(0.7) contrast(1.4) blur(0.3px);
 }
 
 .css {
@@ -203,26 +203,26 @@
 }
 
 .desigions {
-  filter: blur(0.7px);
+  filter: blur(0.7px) sepia(0.3);
 }
 
 .care {
-  filter: sepia(1);
+  filter: sepia(1) contrast(1.8);
 }
 
 .support {
-  filter: invert(1) sepia(0.6);
+  filter: invert(1) sepia(0.6) hue-rotate(90deg);
 }
 
 @keyframes dayNightCycle {
   0% {
-    filter: hue-rotate(0deg);
+    filter: brightness(0.7) hue-rotate(0deg);
   }
   50% {
-    filter: hue-rotate(180deg);
+    filter: brightness(0.7) hue-rotate(180deg);
   }
   100% {
-    filter: hue-rotate(360deg);
+    filter: brightness(0.7) hue-rotate(360deg);
   }
 }
 
@@ -231,7 +231,7 @@
 }
 
 .here {
-  filter: contrast(0.7) opacity(0.8);
+  filter: contrast(0.7) opacity(0.8) grayscale(0.5);
 }
 
 /* DIALOG */
@@ -240,7 +240,6 @@
   display: flex;
   justify-content: center;
   margin-block-end: var(--margin-save-button, 100px);
-  /* background-color: var(--main-bg); */
 }
 
 .button {
