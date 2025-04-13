@@ -227,6 +227,10 @@
   animation: dayNightCycle 10s infinite;
 }
 
+.fly {
+  filter: brightness(0.7) hue-rotate(180deg);
+}
+
 .here {
   filter: contrast(0.7) opacity(0.8) grayscale(0.5);
 }
