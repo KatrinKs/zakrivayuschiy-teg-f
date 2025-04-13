@@ -2,15 +2,21 @@
 
 :root {
   /* FONT */
-  --font-family: 'Inter-Variable';
-  --font-size: 18px;
-  --font-weight: 400;
+  --font-family-press: 'PressStart2P';
+  --font-family-inter: 'Inter-Variable';
+  --font-size-small: 14px;
+  --font-size-normal: 18px;
+  --font-size-header: ;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
   /* MAIN */
+  --border-size: 2px;
+  --border-color: #000;
+
   --main-color: #000;
   --main-bg: #fff;
   --button-color: #fff;
-  --border-color: #000;
-  --border-size: 2px;
+
   --background-img: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
   repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
   linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
@@ -20,4 +26,12 @@
   --animation-fill-color:red;
   --contour-color: #000;
   --text-stroke-color: #fff;
+}
+
+.header__title {
+  --font-size-header: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+}
+
+.header__text {
+  --font-size-header: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
