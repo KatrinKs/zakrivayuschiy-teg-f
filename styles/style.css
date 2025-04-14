@@ -227,11 +227,10 @@
 
 .save-button {
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
   gap: 8px;
-  padding: 15px 20px;
-  margin: 50px auto 0;
+  padding: 15px 20px 15px 19px;
+  margin: 0 auto;
 }
 
 .ok-button {
@@ -278,7 +277,7 @@ dialog[open] {
   display: grid;
   justify-items: center;
   inline-size: clamp(21.313rem, 21.048rem + 1.13vw, 22.063rem);
-  padding: 32px;
+  padding: 28px 32.5px 30.5px 28px;
   /* block-size: clamp(11.938rem, 11.653rem + 0.68vw, 12.063rem); */
 }
 
@@ -292,7 +291,12 @@ dialog[open] {
 
 .dialog-content .save-svg {
   block-size: 2.438rem;
+  flex-shrink: 0;
 }
+/* 
+.save-svg {
+  display: none;
+} */
 
 .content-text {
   line-height: 150%;
@@ -306,6 +310,11 @@ dialog[open] {
 
   .save-button {
     flex-direction: column;
+    padding: 15px 20.5px 15px 19.5px;
+  }
+
+  dialog[open] {
+    padding: 31px 33px;
   }
 
   .button .save-svg {
