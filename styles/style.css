@@ -29,6 +29,8 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  padding: 100px 0;
+
   background: var(--background-img);
   background-size: cover;
   background-attachment: fixed;
@@ -43,14 +45,11 @@
 
 .header {
   display: grid;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
 
   padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem) 0 clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem);
-  margin: 100px auto;
+  margin-block-end: 100px;
 
-  background: var(--main-bg, #fff);
   border: var(--border, var(--border-size, 2px) solid var(--border-color, #000));
 }
 
@@ -73,29 +72,21 @@
 
 /* MAIN */
 
-.main {
-  display: grid;
-  justify-items: center;
-  gap: 52px;
-}
-
-.card:last-child {
-  margin-block-end: 52px;
-}
-
 .card {
   position: relative;
   display: grid;
+  margin-block-end: 52px;
   border: var(--border, var(--border-size, 2px) solid var(--border-color, #000));
 }
 
 .card__title {
   padding: 6px 10px;
 
-  font-variation-settings: "wght" var(--font-weight-bold, 700);
   font-size: var(--font-size-normal);
-  border-block-end: var(--border, var(--border-size, 2px) solid var(--border-color, #000));
+  font-variation-settings: "wght" var(--font-weight-bold, 700);
+  
   line-height: 100%;
+  border-block-end: var(--border, var(--border-size, 2px) solid var(--border-color, #000));
 }
 
 .card__watermark {
@@ -142,7 +133,6 @@
   justify-content: end;
   gap: 6px;
   padding: 0 25px 25px;
-  align-content: center;
   grid-auto-flow: column;
 }
 
@@ -160,7 +150,7 @@
 
 .card__icon-button {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   padding: 0;
   cursor: pointer;
   outline: 2px solid transparent;
@@ -210,7 +200,6 @@
 .save-content {
   display: flex;
   justify-content: center;
-  margin-block-end: var(--margin-save-button, 100px);
 }
 
 .button {
