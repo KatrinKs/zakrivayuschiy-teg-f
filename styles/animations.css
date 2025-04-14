@@ -16,7 +16,7 @@
 }
 
 .like-icon.is-liked {
-  animation: change-size 0.3s;
+  animation: change-size 0.3s 0.1s ease-in;
 }
 
 @keyframes change-size {
@@ -38,7 +38,7 @@
 
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
-  transition: fill 0.1s linear;
+  transition: fill 0.3s 0.06s linear;
 }
 
 .like-icon .main-body {
@@ -71,14 +71,10 @@
   transition: fill 0.3s linear;
 }
 
-.like-icon:active .core {
-  fill: var(--animation-fill-color);
-  transition: fill 0.3s 0.03s linear;
-}
-
+.like-icon:active .core,
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
-  transition: fill 0.3s 0.03s linear;
+  transition: fill 0.3s linear;
 }
 
 .like-icon .sparks {
