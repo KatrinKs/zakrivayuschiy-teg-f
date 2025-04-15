@@ -158,8 +158,11 @@
   padding: 0;
   cursor: pointer;
   border: 2px solid transparent;
-  outline: none;
   transition: border 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
 }
 
 .card__icon-button:focus-visible {
