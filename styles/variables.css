@@ -6,7 +6,8 @@
   --font-family-inter: 'Inter-Variable';
   --font-size-small: 14px;
   --font-size-normal: 18px;
-  --font-size-header: ;
+  --font-size-header: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --font-size-header-text: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   /* MAIN */
@@ -26,12 +27,4 @@
   --animation-fill-color:red;
   --contour-color: #000;
   --text-stroke-color: #fff;
-}
-
-.header__title {
-  --font-size-header: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-}
-
-.header__text {
-  --font-size-header: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
