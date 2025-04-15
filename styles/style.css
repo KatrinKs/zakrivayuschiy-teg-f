@@ -153,12 +153,13 @@
   align-items: flex-end;
   padding: 0;
   cursor: pointer;
-  outline: 2px solid transparent;
+  border: 2px solid transparent;
+  outline: none;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
-  outline: var(--border, var(--border-size, 2px) solid var(--border-color, #000));
-  transition: outline 0.3s ease;
+  border: var(--border, var(--border-size, 2px) solid var(--border-color, #000));
 }
 
 /* IMGS STYLE */
